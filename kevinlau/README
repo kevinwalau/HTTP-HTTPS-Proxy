@@ -1,0 +1,26 @@
+Kevin Lau
+Perm 3424207
+CS 176B
+
+
+How to run:
+  python mproxy.py [-h] [-v] -p PORT [-n NUMWORKER] [-t TIMEOUT] [-l [LOG]]
+
+Install given cert mitm.crt into device.
+Then HTTPS websites can be accessed.
+
+
+HTTP sites that worked (assuming all/most work after trying these two)
+  cs.ucsb.edu
+  example.com
+
+HTTPS sites that worked ( takes a while to load, but the full sites load for each)
+  venmo.com
+  tumblr.com
+  buzzfeed.com
+  reddit.com
+  quora.com
+
+File submission includes certs directory, which contains mitm.crt, the fake cert I generated and installed on my android device. To achieve same results, copy mitm.crt from the directory and install on desired device.
+
+Currently, program does not handle spoofing, did not have time to get to this part.
